@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:12.18
+    restart: always
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: Practica05
+    container_name: postgresuv
